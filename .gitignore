@@ -1,0 +1,67 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Pytest cache
+.pytest_cache/
+
+# CatBoost training artifacts
+catboost_info/
+
+# Outputs - models, oof predictions, reports, logs, images
+health-kaggle/outputs/models/
+health-kaggle/outputs/oof/
+health-kaggle/outputs/reports/
+
+# Exclude all submissions except the best one
+health-kaggle/outputs/submissions/*
+!health-kaggle/outputs/submissions/submission_best.csv
+
+# Probability files (large intermediate outputs)
+health-kaggle/outputs/submissions/*_probs_*.csv
+
+# Input data (download from Kaggle - see README)
+health-kaggle/data/train.csv
+health-kaggle/data/test.csv
+health-kaggle/data/sample_submission.csv
+
+# Pseudo labels (generated data)
+health-kaggle/data/pseudo_labels.csv
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Documentation / planning artifacts (not needed on GitHub)
+implementation_plan.md
+task.md
+walkthrough.md
+
+# Gemini agent artifacts
+.agents/
+.gemini/
+
+# Jupyter / notebook outputs
+*.ipynb
+
+# Byte-compiled
+*.egg-info/
+dist/
+build/
